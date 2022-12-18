@@ -128,8 +128,9 @@ const Quizscreen =  () =>{
         }
         if(c===0){
             visit[current++] = index;
-            if(answer===found.correct)
-                ++score;
+            if(answer===found.correct){
+                ++score; setscore(score);
+              }
 
             alert("YOUR ANSWER OF Q-"+(index+1)+" HAS BEEN LOCKED..!");
         }else{
@@ -151,10 +152,11 @@ const Quizscreen =  () =>{
             setIndex(index+1)
         }
     }
-
+    const [newscore,setscore] = useState(0);
     const FinalScore = () =>{
         check();
-        alert("YOUR SCORE IS "+score);
+        //alert("YOUR SCORE IS "+score);
+        <FinalScore score1 = {()=> setscore(score)}/>
     }
 
     return(
