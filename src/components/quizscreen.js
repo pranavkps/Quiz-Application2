@@ -156,7 +156,7 @@ const Quizscreen =  () =>{
     const FinalScore = () =>{
         check();
         alert("YOUR SCORE IS "+score);
-        /)<FinalScore score1 = {()=> setscore(score)}/>
+        //)<FinalScore score1 = {()=> setscore(score)}/>
     }
 
     return(
