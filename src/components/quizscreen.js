@@ -129,7 +129,7 @@ const Quizscreen =  () =>{
         if(c===0){
             visit[current++] = index;
             if(answer===found.correct){
-                ++score; setscore(score);
+                setscore(prevScore => prevScore+1);
               }
 
             alert("YOUR ANSWER OF Q-"+(index+1)+" HAS BEEN LOCKED..!");
